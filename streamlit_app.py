@@ -18,7 +18,7 @@ streamlit.dataframe(my_data_rows)
 
 streamlit.text("What fruit would you like to add")
 # adding a search box for text
-fruit_choice = streamlit.text_input('What fruit would you like to add','jackfruit')
+snowflake_fruit_choice = streamlit.text_input('What fruit would you like to add','jackfruit')
 streamlit.write('The user entered ', snowflake_fruit_choice)
 
 
