@@ -20,6 +20,8 @@ if streamlit.button('Get Fruit Load List'):
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
+# splitting app into work and final
+streamlit.stop()
 
 streamlit.text("What fruit would you like to add")
 # adding a search box for text
