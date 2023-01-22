@@ -25,7 +25,7 @@ streamlit.write('Thanks for adding ', add_my_fruit)
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
 # splitting app into work and final
-streamlit.stop()
+#streamlit.stop()
 
 
 
