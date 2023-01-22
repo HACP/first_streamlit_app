@@ -1,6 +1,7 @@
 import streamlit
 import pandas
 import requests
+from urllib.error import URLError
 
 # adding connector - needs requirement.txt file
 import snowflake.connector
@@ -20,6 +21,11 @@ streamlit.text("What fruit would you like to add")
 # adding a search box for text
 snowflake_fruit_choice = streamlit.text_input('What fruit would you like to add','jackfruit')
 streamlit.write('The user entered ', snowflake_fruit_choice)
+
+# splitting app into work and final
+streamlit.stop()
+
+
 
 
 # formating the page
