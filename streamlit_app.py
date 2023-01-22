@@ -2,6 +2,9 @@ import streamlit
 import pandas
 import requests
 
+# adding connector - needs requirement.txt file
+import snowflake.connector
+
 # formating the page
 streamlit.title('My Parents New Healthy Diner')
 
