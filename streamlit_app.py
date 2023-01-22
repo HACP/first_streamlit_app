@@ -40,7 +40,7 @@ if streamlit.button('Add a Fruit to the List'):
 
 
 # splitting app into work and final
-streamlit.stop()
+#streamlit.stop()
 
 
 
