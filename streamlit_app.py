@@ -31,6 +31,10 @@ streamlit.dataframe(fruits_to_show)
 # New section to display fruityvice api fruityvice_response
 streamlit.header("Fruityvice Fruit Advice!")
 
+# adding a search box for text
+fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+streamlit.write('The user entered ', fruit_choice)
+
 # Adding a response from the API
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 #streamlit.text(fruityvice_response.json())
