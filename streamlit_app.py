@@ -19,8 +19,10 @@ streamlit.dataframe(my_data_rows)
 
 streamlit.text("What fruit would you like to add")
 # adding a search box for text
-snowflake_fruit_choice = streamlit.text_input('What fruit would you like to add','jackfruit')
-streamlit.write('The user entered ', snowflake_fruit_choice)
+add_my_fruit = streamlit.text_input('What fruit would you like to add','jackfruit')
+streamlit.write('Thanks for adding ', add_my_fruit)
+
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
 # splitting app into work and final
 streamlit.stop()
